@@ -1,0 +1,15 @@
+--target=arm-none-eabi
+-march=armv6k
+-mfloat-abi=hard
+-std=gnu++17
+-D__3DS__
+-D_GNU_SOURCE
+-Isource
+-Ideps/prefix/include
+-I/opt/devkitpro/libctru/include
+-isystem/opt/devkitpro/devkitARM/arm-none-eabi/include/c++/16.1.0
+-isystem/opt/devkitpro/devkitARM/arm-none-eabi/include/c++/16.1.0/arm-none-eabi
+-isystem/opt/devkitpro/devkitARM/arm-none-eabi/include
+-isystem/opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/16.1.0/include
+-nostdinc
+-nostdinc++

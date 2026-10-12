@@ -1,0 +1,33 @@
+# --- Build output (regenerate with `make` / `make cia`)
+build/
+*.3dsx
+*.cia
+*.elf
+*.smdh
+*.map
+*.bnr
+*.icn
+
+# --- Third-party sources, libraries and tools (regenerate with `make deps`)
+deps/
+
+# --- Host test binaries and debug output (regenerate with `make -C tests`)
+tests/host_api_test
+tests/host_media_test
+tests/*.dSYM/
+tests/bad_search.json
+# util::logf's SD-card path, if a host build ever writes it
+sdmc:/
+
+# --- Editors and tooling
+.vscode/
+.idea/
+.cache/
+*.swp
+*~
+__pycache__/
+*.pyc
+
+# --- OS clutter
+.DS_Store
+Thumbs.db
